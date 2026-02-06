@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For You 🌹</title>
+</head>
+<body style="text-align:center; font-family:Arial; background:#ffe6f0;">
+
+  <img src="rose.jpg" width="200">
+
+  <h1>Hey YAKSHIT 💗</h1>
+  <p>Will you be mine?</p>
+
+  <button onclick="yes()">Yes 💕</button>
+  <button id="no" onmouseover="move()">No 🙈</button>
+
+  <script>
+    function move() {
+      let x = Math.random() * 200;
+      let y = Math.random() * 200;
+      document.getElementById("no").style.transform =
+        "translate(" + x + "px," + y + "px)";
+    }
+
+    function yes() {
+      document.body.innerHTML =
+        "<h1>Yayyyy 🌹</h1><p>You made my day 🥹💖</p>";
+    }
+  </script>
+
+</body>
+  </html>
